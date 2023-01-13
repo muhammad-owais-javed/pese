@@ -1,7 +1,9 @@
 Privacy Extension for Search Engines (PESE)
 ---------------------------------------
 
+A search query mixer is designed on the server side of a search engine to provide search anonymity.
 Decouples users' IP addresses from the search phrases they enter even from the root user.
+The Trusted Execution Environment prevents the root user from knowing who is looking for what.
 
 ![Technical Architecture for TEE Implementation](./documentation/architecture.png "Technical Architecture for TEE Implementation"){width=75%}
 
@@ -10,11 +12,18 @@ It decouples users' IP addresses from the search phrases they enter.
 The idea is to aggregate search queries within an enclave and 
 execute them in a random sequence after a brief delay.
 Thus, the search engine cannot see who specifically searched for particular terms.
+
+The degree of anonymity is determined by the number of users making searches during the delay.
 Even if the delay is only 100 milliseconds in a real-world scenario,
 this would result in a large anonymity set,
 such as 1,000 individuals mixed together.
 
 ![Screenshot of the searches](./documentation/search.png "Screenshot of the searches"){width=75%}
+
+For the search, the user's web browser executes two separate HTTP GET requests, one for the search and the other to fetch the results.
+As a result, there is no connection between the incoming and outgoing traffic during these calls.
+The web browser receives an HTML redirect page for the query and moves on to the result page after a brief delay.
+To avoid a naive size correlation, result pages are always the same size in bytes (added padding).
 
 # Requirements
 
