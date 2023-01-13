@@ -1,0 +1,84 @@
+[[files]]
+kind = "stdin"
+
+[[files]]
+kind = "stdout"
+
+[[files]]
+kind = "stderr"
+
+[[files]]
+name = "SERVER"
+kind = "listen"
+prot = "tcp"
+port = 34455
+
+[[files]]
+name = "SEARCH0"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31000
+
+[[files]]
+name = "SEARCH1"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31001
+
+[[files]]
+name = "SEARCH2"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31002
+
+[[files]]
+name = "SEARCH3"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31003
+
+[[files]]
+name = "SEARCH4"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31004
+
+[[files]]
+name = "SEARCH5"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31005
+
+[[files]]
+name = "SEARCH6"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31006
+
+[[files]]
+name = "SEARCH7"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31007
+
+[[files]]
+name = "SEARCH8"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31008
+
+[[files]]
+name = "SEARCH9"
+kind = "connect"
+prot = "tcp"
+host = "46.19.38.63" # ahmia.fi
+port = 31009

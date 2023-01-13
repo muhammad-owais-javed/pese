@@ -1,0 +1,14 @@
+[package]
+name = "pese"
+version = "1.0.0"
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+mini_http = {git = "https://github.com/haraldh/mini_http"}
+httparse = "1"
+http = "0.1"
+rand = "0.8.5"
+lazy_static = "1.4.0"
+sha2 = "0.10.6"
+compressed_string = "1.0.0"
